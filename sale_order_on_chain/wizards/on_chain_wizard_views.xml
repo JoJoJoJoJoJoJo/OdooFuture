@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="on_chain_wizard_view_form" model="ir.ui.view">
+        <field name="name">on.chain.wizard.form</field>
+        <field name="model">on.chain.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Order On-chain">
+                <group>
+                    <field name="order_ids">
+                        <tree>
+                            <field name="name"/>
+                            <field name="date_order"/>
+                            <field name="partner_id"/>
+                            <field name="amount_total"/>
+                            <field name="state"/>
+                        </tree>
+                    </field>
+                </group>
+                <footer>
+                    <button name="action_on_chain" class="btn-primary" string="Confirm" type="object"/>
+                    <button string="Cancel" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window
+        name="Order On-chain"
+        res_model="on.chain.wizard"
+        binding_model="sale.order"
+        view_mode="form"
+        target="new"
+        view_id="on_chain_wizard_view_form"
+        id="action_on_chain_wizard"/>
+</odoo>

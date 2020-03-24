@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="sale_order_fuchain_config" model="block.chain.config">
+        <field name="sale_order_url">
+            http://fuchain.nat300.top/odoo/salesorder/initMember</field>
+        <field name="sale_order_line_url">
+            http://fuchain.nat300.top/odoo/salesorderlines/initMember</field>
+    </record>
+</odoo>

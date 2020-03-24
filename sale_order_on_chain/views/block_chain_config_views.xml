@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_block_chain_config_form" model="ir.ui.view">
+        <field name="name">view.block.chain.config.form</field>
+        <field name="model">block.chain.config</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="sale_order_url"/>
+                    <field name="sale_order_line_url"/>
+                    <field name="active"/>
+                </group>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_block_chain_config_tree" model="ir.ui.view">
+        <field name="name">view.block.chain.config.tree</field>
+        <field name="model">block.chain.config</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sale_order_url"/>
+                <field name="sale_order_line_url"/>
+            </tree>
+        </field>
+    </record>
+
+    <act_window id="action_block_chain_config"
+                name="Block Chain Configurations"
+                res_model="block.chain.config"
+                view_mode="tree,form"/>
+
+    <menuitem id="menu_block_chain_config"
+              name="Block Chain Configurations"
+              action="action_block_chain_config"
+              parent="sale.menu_sale_config"/>
+</odoo>

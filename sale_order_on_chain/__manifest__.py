@@ -14,7 +14,10 @@
         'sale_management',
     ],
     'data': [
+        'security/ir.model.access.csv',
+        'data/block_chain_config_data.xml',
         'views/sale_order_views.xml',
+        'views/block_chain_config_views.xml',
         'wizards/on_chain_wizard_views.xml',
     ],
     'application': False,

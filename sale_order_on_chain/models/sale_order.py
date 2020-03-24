@@ -9,11 +9,13 @@ import json
 import datetime
 
 TIMEOUT = 10
-SALE_ORDER_INIT = 'http://fuchain.nat300.top/odoo/salesorder/initMember'
-SALE_ORDER_LINE_INIT = 'http://fuchain.nat300.top/odoo/salesorderlines/initMember'
 
 
-def on_chain(endpoint, data, odoo_id):
+def on_chain(env, field, data, odoo_id):
+    config_id  = env['block.chain.config'].search([], limit=1)
+    if not config_id:
+        raise UserError('Please check block chain configurations.')
+    endpoint = getattr(config_id, field)
     headers = {
         'Content-Type': 'application/x-www-form-urlencoded'
     }
@@ -174,7 +176,7 @@ class SaleOrder(models.Model):
                 "currency_id": "CURRENCY_ID",
                 "no_code_promo_program_ids": "NO_CODE_PROMO_PROGRAM_IDS"}
             order.order_line.order_line_on_chain()
-            on_chain(SALE_ORDER_INIT, order_data, order)
+            on_chain(self.env, 'sale_order_url', order_data, order)
 
 class SaleOderLine(models.Model):
     _inherit = 'sale.order.line'
@@ -275,4 +277,4 @@ class SaleOderLine(models.Model):
                 "product_uom_qty": str(order_line.product_uom_qty),
                 "warehouse_id": "WAREHOUSE_ID"
             }
-            on_chain(SALE_ORDER_LINE_INIT ,line_data, order_line)
+            on_chain(self.env, 'sale_order_line_url' ,line_data, order_line)

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view"
+            id="view_event_registration_form_elico">
+        <field name="name">event.registration.form.inherit.elico</field>
+        <field name="model">event.registration</field>
+        <field name="inherit_id" ref="event.view_event_registration_form"/>
+        <field name="arch" type="xml">
+            <field name="name" position="after">
+                <field name="company"/>
+                <field name="job"/>
+            </field>
+        </field>
+    </record>
+</odoo>

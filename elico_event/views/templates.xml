@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="registration_attendee_details_elico"
+              inherit_id="website_event.registration_attendee_details">
+        <xpath expr="//div[@class='row']"
+               position="replace">
+            <div class="row">
+                <div class="col-lg my-2">
+                    <label>Name</label>
+                    <input class="form-control" type="text"
+                           t-attf-name="#{counter}-name"
+                           required="This field is required"/>
+                </div>
+                <div class="col-lg my-2">
+                    <label>Company</label>
+                    <input class="form-control" type="text"
+                           t-attf-name="#{counter}-company"/>
+                </div>
+                <div class="col-lg my-2">
+                    <label>Job Position</label>
+                    <input class="form-control" type="text"
+                           t-attf-name="#{counter}-job"/>
+                </div>
+                <input class="d-none" type="text"
+                       t-attf-name="#{counter}-ticket_id"
+                       t-attf-value="#{ticket['id']}"/>
+            </div>
+            <div class="row">
+                <div class="col-lg my-2">
+                    <label>Phone
+                    </label>
+                    <input class="form-control" type="tel"
+                           t-attf-name="#{counter}-phone"
+                           required="This field is required"/>
+                </div>
+                <div class="col-lg my-2">
+                    <label>Email</label>
+                    <input class="form-control" type="email"
+                           t-attf-name="#{counter}-email"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
+

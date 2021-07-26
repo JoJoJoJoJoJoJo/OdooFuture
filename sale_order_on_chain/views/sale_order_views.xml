@@ -20,8 +20,9 @@
             </xpath>
             <xpath expr="//page[@name='other_information']" position="inside">
                 <group>
-                    <group name="blockchain" string="BlockChain">
-                        <field name="txid" readonly="1"/>
+                    <group name="blockchain" string="Elico Block Chain">
+                        <img width="30px" alt="Elico" src='/sale_order_on_chain/static/image/logo.png'/>
+                        <field name="txid" readonly="1" nolabel="1"/>
                     </group>
                 </group>
             </xpath>

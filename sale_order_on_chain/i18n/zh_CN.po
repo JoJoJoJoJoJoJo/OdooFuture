@@ -39,8 +39,8 @@ msgstr "区块链参数设置"
 
 #. module: sale_order_on_chain
 #: model_terms:ir.ui.view,arch_db:sale_order_on_chain.view_order_form_sale_order_on_chain
-msgid "BlockChain"
-msgstr "区块链"
+msgid "Elico Block Chain"
+msgstr "寰享链"
 
 #. module: sale_order_on_chain
 #: model_terms:ir.ui.view,arch_db:sale_order_on_chain.on_chain_wizard_view_form

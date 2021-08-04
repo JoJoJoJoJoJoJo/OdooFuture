@@ -39,6 +39,7 @@ class SaleOrder(models.Model):
     _inherit = "sale.order"
 
     txid = fields.Char(
+        string='TCid',
         copy=False,
     )
     on_chain_id = fields.Char(
@@ -182,6 +183,7 @@ class SaleOderLine(models.Model):
     _inherit = 'sale.order.line'
 
     txid = fields.Char(
+        string='TCid',
         copy=False,
     )
     on_chain_id = fields.Char(

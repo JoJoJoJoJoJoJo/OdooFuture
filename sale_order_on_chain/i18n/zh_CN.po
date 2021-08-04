@@ -4,18 +4,16 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 13.0\n"
+"Project-Id-Version: Odoo Server 13.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-03-24 06:08+0000\n"
-"PO-Revision-Date: 2020-03-24 14:10+0800\n"
+"POT-Creation-Date: 2021-08-04 10:01+0000\n"
+"PO-Revision-Date: 2021-08-04 10:01+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: 8bit\n"
+"Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
-"Language: zh\n"
-"X-Generator: Poedit 2.2.1\n"
 
 #. module: sale_order_on_chain
 #: model_terms:ir.ui.view,arch_db:sale_order_on_chain.view_order_form_sale_order_on_chain
@@ -36,11 +34,6 @@ msgstr "有效"
 #: model:ir.ui.menu,name:sale_order_on_chain.menu_block_chain_config
 msgid "Block Chain Configurations"
 msgstr "区块链参数设置"
-
-#. module: sale_order_on_chain
-#: model_terms:ir.ui.view,arch_db:sale_order_on_chain.view_order_form_sale_order_on_chain
-msgid "Elico Block Chain"
-msgstr "寰享链"
 
 #. module: sale_order_on_chain
 #: model_terms:ir.ui.view,arch_db:sale_order_on_chain.on_chain_wizard_view_form
@@ -69,6 +62,16 @@ msgstr ""
 #: model:ir.model.fields,field_description:sale_order_on_chain.field_on_chain_wizard__display_name
 msgid "Display Name"
 msgstr ""
+
+#. module: sale_order_on_chain
+#: model_terms:ir.ui.view,arch_db:sale_order_on_chain.view_order_form_sale_order_on_chain
+msgid "Elico"
+msgstr ""
+
+#. module: sale_order_on_chain
+#: model_terms:ir.ui.view,arch_db:sale_order_on_chain.view_order_form_sale_order_on_chain
+msgid "Elico Block Chain"
+msgstr "寰享链"
 
 #. module: sale_order_on_chain
 #: model:ir.model.fields,field_description:sale_order_on_chain.field_block_chain_config__id
@@ -134,8 +137,8 @@ msgstr "销售订单分录"
 #. module: sale_order_on_chain
 #: model:ir.model.fields,field_description:sale_order_on_chain.field_sale_order__txid
 #: model:ir.model.fields,field_description:sale_order_on_chain.field_sale_order_line__txid
-msgid "Txid"
-msgstr "Txid"
+msgid "TCid"
+msgstr "可信凭证唯一码"
 
 #. module: sale_order_on_chain
 #: model:ir.model,name:sale_order_on_chain.model_block_chain_config

@@ -71,7 +71,7 @@ msgstr ""
 #. module: sale_order_on_chain
 #: model_terms:ir.ui.view,arch_db:sale_order_on_chain.view_order_form_sale_order_on_chain
 msgid "Elico Block Chain"
-msgstr "寰享链"
+msgstr "寰享可信平台"
 
 #. module: sale_order_on_chain
 #: model:ir.model.fields,field_description:sale_order_on_chain.field_block_chain_config__id
@@ -138,7 +138,7 @@ msgstr "销售订单分录"
 #: model:ir.model.fields,field_description:sale_order_on_chain.field_sale_order__txid
 #: model:ir.model.fields,field_description:sale_order_on_chain.field_sale_order_line__txid
 msgid "TCid"
-msgstr "可信凭证唯一码"
+msgstr "可信凭证码"
 
 #. module: sale_order_on_chain
 #: model:ir.model,name:sale_order_on_chain.model_block_chain_config

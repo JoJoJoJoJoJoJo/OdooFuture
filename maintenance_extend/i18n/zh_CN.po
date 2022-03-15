@@ -159,3 +159,48 @@ msgstr "变速箱序列号"
 #: model:ir.model.fields,field_description:maintenance_extend.field_product_template__website
 msgid "website"
 msgstr "采购链接"
+
+#. module: maintenance_extend
+#: model_terms:ir.ui.view,arch_db:maintenance_extend.product_normal_form_view_inherit_maintenance_purchase
+msgid "Equipments"
+msgstr "设备"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__company_id
+msgid "Company"
+msgstr "设备所有方"
+
+#. module: maintenance_extend
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_form
+msgid "Product Information"
+msgstr "资产信息"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_id
+msgid "Vendor"
+msgstr "设备品牌"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__partner_ref
+msgid "Vendor Reference"
+msgstr "设备制造商"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__model
+msgid "Model"
+msgstr "规格型号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__serial_no
+msgid "Serial Number"
+msgstr "产品编号"
+
+#. module: maintenance_extend
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "<b>Serial Number:</b>"
+msgstr "<b>序列号:</b>"
+
+#. module: maintenance_extend
+#: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
+msgid "<b>Model Number:</b>"
+msgstr "<b>规格型号 :</b>"

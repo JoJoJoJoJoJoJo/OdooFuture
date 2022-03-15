@@ -1,0 +1,161 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* maintenance_extend
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-13 15:13+0000\n"
+"PO-Revision-Date: 2022-03-13 15:13+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: maintenance_extend
+#: model_terms:ir.ui.view,arch_db:maintenance_extend.product_normal_form_view_inherit_maintenance_purchase
+msgid "<span class=\"o_stat_text\">equipment</span>"
+msgstr ""
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__create_uid
+msgid "Created by"
+msgstr "创建自"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__create_date
+msgid "Created on"
+msgstr "创建在"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__default_code
+msgid "Default Code"
+msgstr "内部参考"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__display_name
+msgid "Display Name"
+msgstr "显示名称"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__id
+msgid "ID"
+msgstr "ID"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line____last_update
+msgid "Last Modified on"
+msgstr "上次修改"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__write_uid
+msgid "Last Updated by"
+msgstr "上次更新由"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__write_date
+msgid "Last Updated on"
+msgstr "上次更新"
+
+#. module: maintenance_extend
+#: model:ir.model,name:maintenance_extend.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "设备保养"
+
+#. module: maintenance_extend
+#: model:ir.model,name:maintenance_extend.model_maintenance_order_line
+#: model_terms:ir.ui.view,arch_db:maintenance_extend.hr_equipment_extend_view_form
+msgid "Maintenance Order Line"
+msgstr "备件耗材"
+
+#. module: maintenance_extend
+#: model_terms:ir.ui.view,arch_db:maintenance_extend.hr_equipment_extend_view_form
+msgid "Maintenance Order Lines"
+msgstr "备件耗材"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__order_id
+msgid "Maintenance Order Reference"
+msgstr ""
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__order_line
+msgid "Order Lines"
+msgstr ""
+
+#. module: maintenance_extend
+#: model:ir.model,name:maintenance_extend.model_product_product
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__product_id
+msgid "Product"
+msgstr "产品名称"
+
+#. module: maintenance_extend
+#: model:ir.model,name:maintenance_extend.model_product_template
+msgid "Product Template"
+msgstr ""
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_order_line__website
+msgid "Website"
+msgstr "采购链接"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,help:maintenance_extend.field_maintenance_order_line__website
+#: model:ir.model.fields,help:maintenance_extend.field_product_product__website
+#: model:ir.model.fields,help:maintenance_extend.field_product_template__website
+msgid "Website of the product"
+msgstr "采购链接"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__attachment_name
+msgid "attachment_name"
+msgstr "属具名称"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__attachment_sn
+msgid "attachment_sn"
+msgstr "属具型号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__drive_sn
+msgid "drive_sn"
+msgstr "驱动桥序列号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__engine_sn
+msgid "engine_sn"
+msgstr "发动机序列号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__frame_sn
+msgid "frame_sn"
+msgstr "车架体序列号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__production_check_date
+msgid "production check date"
+msgstr "出厂检验日期"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__supplier_order
+msgid "supplier_order"
+msgstr "厂商订单号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__tire_sn
+msgid "tire_sn"
+msgstr "轮胎型号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_maintenance_equipment__transmission_sn
+msgid "transmission_sn"
+msgstr "变速箱序列号"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance_extend.field_product_product__website
+#: model:ir.model.fields,field_description:maintenance_extend.field_product_template__website
+msgid "website"
+msgstr "采购链接"

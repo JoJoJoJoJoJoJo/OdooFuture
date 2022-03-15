@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="hr_equipment_extend_view_form" model="ir.ui.view">
+        <field name="name">equipment.extend.form</field>
+        <field name="model">maintenance.equipment</field>
+        <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='warranty_date']" position="after">
+                <field name="production_check_date"/>
+                <field name="supplier_order"/>
+                <field name="engine_sn"/>
+                <field name="drive_sn"/>
+                <field name="transmission_sn"/>
+                <field name="frame_sn"/>
+                <field name="attachment_name"/>
+                <field name="attachment_sn"/>
+                <field name="tire_sn"/>
+            </xpath>
+            <xpath expr="//page[@name='maintenance']" position="after">
+                <page string="Maintenance Order Line" name="maintenance_order_line">
+                    <field name="order_line">
+                        <tree string="Maintenance Order Lines" editable="bottom">
+                            <field name="product_id" force_save="1"/>
+                            <field name="default_code" readonly="1"/>
+                            <field name="website" widget="url" readonly="1"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>    
+</odoo>

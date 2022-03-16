@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <record id="product_normal_form_view_inherit_maintenance_purchase" model="ir.ui.view">
-        <field name="name">maintenance.product.product.purchase.order</field>
-        <field name="model">product.product</field>
-        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="name">maintenance.product.template.purchase.order</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="purchase.view_product_template_purchase_buttons_from"/>
         <field name="groups_id" eval="[(4, ref('purchase.group_purchase_user'))]"/>
         <field name="arch" type="xml">
             <div name="button_box" position="inside">
@@ -17,9 +17,25 @@
                     </div>
                 </button>
             </div>
-            <xpath expr="//field[@name='description_purchase']" position="after">
+            <xpath expr="//field[@name='purchase_method']" position="after">
                 <field name="website" widget="url"/>
             </xpath>
         </field>
-    </record>    
+    </record>
+
+    <record id="product_template_website_search_tree" model="ir.ui.view">
+        <field name="name">product.template.website.search.tree</field>
+        <field name="model">product.template</field>
+        <field name="groups_id" eval="[(4, ref('purchase.group_purchase_user'))]"/>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="default_code"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+                <field name="list_price" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                <field name="standard_price" widget="monetary" options="{'currency_field': 'cost_currency_id'}"/>
+                <field name="website" widget="url"/>
+            </tree>
+        </field>
+    </record>
 </odoo>

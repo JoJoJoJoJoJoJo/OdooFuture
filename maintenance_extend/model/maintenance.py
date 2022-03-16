@@ -23,6 +23,6 @@ class MaintenanceOrderLine(models.Model):
     _order = 'order_id, id'
 
     order_id = fields.Many2one('maintenance.equipment', string='Maintenance Order Reference', index=True, required=True, ondelete='cascade')
-    product_id = fields.Many2one('product.product', string='Product', change_default=True)
+    product_id = fields.Many2one('product.template', string='Product', change_default=True)
     default_code = fields.Char('Default Code', related='product_id.default_code')
     website = fields.Char('Website', related='product_id.website', help="Website of the product")

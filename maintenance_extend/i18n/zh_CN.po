@@ -162,7 +162,7 @@ msgstr "采购链接"
 
 #. module: maintenance_extend
 #: model_terms:ir.ui.view,arch_db:maintenance_extend.product_normal_form_view_inherit_maintenance_purchase
-msgid "Equipments"
+msgid "<span class=\"o_stat_text\">Equipments</span>"
 msgstr "设备"
 
 #. module: maintenance_extend
@@ -204,3 +204,8 @@ msgstr "<b>序列号:</b>"
 #: model_terms:ir.ui.view,arch_db:maintenance.hr_equipment_view_kanban
 msgid "<b>Model Number:</b>"
 msgstr "<b>规格型号 :</b>"
+
+#. module: maintenance_extend
+#: model:ir.model.fields,field_description:maintenance.field_maintenance_equipment__effective_date
+msgid "Effective Date"
+msgstr "验收时间"

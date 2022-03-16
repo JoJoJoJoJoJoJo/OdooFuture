@@ -6,12 +6,6 @@ class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     website = fields.Char('website', help="Website of the product")
-
-
-class ProductProduct(models.Model):
-    _name = 'product.product'
-    _inherit = 'product.product'
-
     equipment_count = fields.Integer('Equipment Count', compute='_compute_equipment')
     equipment_ids = fields.Many2many('maintenance.equipment', string='Equipments', compute='_compute_equipment')
 
